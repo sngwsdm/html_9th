@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steam 회원가입 - 예제</title>
+</head>
+<body>
+    <div class="membership">
+        <form action="#">
+            <h2>CREATE YOUR ACCOUNT</h2> 
+            <div>
+                <label for="user_email">Email Address</label><br>
+                <input type="text" id="user_email">
+            </div>
+            <div>
+                <label for="user_email_confirm">Confirm your Address</label><br>
+                <input type="text" id="user_email_confirm">
+            </div>
+            <div>
+                <label for="user_residence">Country of Residence</label><br>
+                <select id="user_residence">
+                    <option value="Region not selected">Select a region</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea, Republic of" selected>Korea, Republic of</option>
+                    <option value="United State">United State</option>
+                    <option value="Viet nam">Viet nam</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="agree">
+                <label for="agree">I am 13 years of age or older and agree to the terms of the <a href="#" target="_blank">Steam Subscriber Agreement</a> and the <a href="#" target="_blank">Vaive Privacy Policy</a>.</label>
+            </div>
+            <!-- /// 구글 리캡차 연동해주세요~~~ /// -->
+            <div class="recaptcha"></div>
+            <!-- ///////////////////////////////// -->
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+</html>

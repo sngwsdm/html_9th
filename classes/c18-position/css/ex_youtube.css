@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    /* right: 0; */
+    height: 56px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+aside{
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: beige;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    overflow: auto;
+}
+.category{
+    position: fixed;
+    left: 240px;
+    top: 56px;
+    height: 56px;
+    width: calc(100% - 240px);
+    background-color: lightgreen;
+}
+main{
+    background-color: plum;
+    min-height: 200vh;
+    margin-left: 240px;
+    margin-top: calc(56px*2);
+    padding: 16px;
+    /* height: calc(100% - 112px);
+    position: fixed;
+    left: 240px;
+    top: 112px;
+    width: calc(100% - 240px);
+    overflow: auto; */
+}
+header>div{
+    height: 24px;
+    background-color: lightsalmon;
+}
+.logo{width: 170px;}
+.account{width: 225px;}
+.search{width: 730px;}
+
+aside>div{
+    min-height: 300px;
+    background-color: lightsalmon;
+    border-bottom: 1px solid #000;
+    padding: 12px;
+}
+aside>div>section{
+    min-height: 150px;
+    background-color: lightseagreen;
+    border-bottom: 1px solid #000;
+    margin-bottom: 12px;
+}
+aside>div>section:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+ul{list-style: none;}
+.normalVideo ul li{
+    background-color: lightsalmon;
+    height: 340px;
+    width: calc((100% - 16px*(4 - 1))/4);
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+.normalVideo ul li:nth-of-type(4n){
+    margin-right: 0;
+}
+.normalVideo ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 끝에서 첫번째 리스트를 선택 */
+.normalVideo ul li:nth-last-of-type(1),
+.normalVideo ul li:nth-last-of-type(2),
+.normalVideo ul li:nth-last-of-type(3),
+.normalVideo ul li:nth-last-of-type(4){
+    margin-bottom: 0;
+}
